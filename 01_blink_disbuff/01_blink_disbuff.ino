@@ -14,14 +14,14 @@ void loop() {
   DisBuff[1] = 0x05;
 
   for (int i = 0; i < 25;i++){
-    DisBuff[2 + i * 3 + 0] = 0x00;
-    DisBuff[2 + i * 3 + 1] = 0x20;
+    DisBuff[2 + i * 3 + 0] = 0x20;
+    DisBuff[2 + i * 3 + 1] = 0x00;
     DisBuff[2 + i * 3 + 2] = 0x00;
   }
 
   M5.dis.displaybuff(DisBuff);
   delay(50);
-  M5.update();
+//  M5.update();
   delay(950);
 
   for (int i = 0; i < 25; i++)
@@ -33,6 +33,6 @@ void loop() {
 
   M5.dis.displaybuff(DisBuff);
   delay(50);
-  M5.update();
+//  M5.update();
   delay(950);
 }

@@ -3,13 +3,10 @@
 uint8_t DisBuff[2 + 5 * 5 * 3];
 
 void setup() {
-  // put your setup code here, to run once:
   M5.begin(true, false, true);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
   DisBuff[0] = 0x05;
   DisBuff[1] = 0x05;
 
@@ -20,9 +17,7 @@ void loop() {
   }
 
   M5.dis.displaybuff(DisBuff);
-  delay(50);
-//  M5.update();
-  delay(950);
+  delay(1000);
 
   for (int i = 0; i < 25; i++)
   {
@@ -32,7 +27,5 @@ void loop() {
   }
 
   M5.dis.displaybuff(DisBuff);
-  delay(50);
-//  M5.update();
-  delay(950);
+  delay(1000);
 }

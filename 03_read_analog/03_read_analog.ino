@@ -1,3 +1,6 @@
+// for GROVE temperature sensor v1.2
+//   https://wiki.seeedstudio.com/Grove-Temperature_Sensor_V1.2/
+
 #include "M5Atom.h"
 
 const int pin_temperature = 25;

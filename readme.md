@@ -5,6 +5,7 @@ Atom Matrixのサンプルコード集です。
 |:-|:-|
 |01_blink_disbuff|全面でLチカ|
 |02_blink_drawpix|ちょっと遊んだLチカ|
+|03_read_analog|アナログセンサを読む（GROVE温度センサ）|
 
 # 使い方
 好きなプロジェクトをダウンロードしてArduinoフォルダの下におき、Arduino IDEでコンパイル、アップロードしてください。

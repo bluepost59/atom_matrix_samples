@@ -37,12 +37,10 @@ void loop()
 
 float read_temperature(int pin_number){
     int raw_temperature = analogRead(pin_number);
-    float R = 1023.0 / (raw_temperature*1024.0/4096.0) -1.0;
+    float R = 1023.0 / (raw_temperature/4.0) -1.0;
 
     float temperature = 1.0 / (log(R)/ B + 1 / 298.15) - 275.15;
 
-    // Serial.println(R);
-    // Serial.println(raw_temperature);
     Serial.println(temperature);
 
     return temperature;
